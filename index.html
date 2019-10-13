@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SIERRA</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- LIVE BACKGROUND -->
+    <div class="container">
+      <h2><span></span>Share </h2>
+      <h2><span></span>your </h2>
+      <h2><span></span>STORIES</h2>
+    </div>
+    <!-- END LIVE BG -->
+
+    <!-- parsa -->
+    <div class="parsa-sidebar-left">
+      <i class="fa fa-twitter parsa-circle-sidebar"></i>
+      <i class="fa fa-home parsa-circle-sidebar"></i>
+      <div class="parsa-thang parsa-circle-sidebar">#</div>
+      <i class="fa fa-bell-o parsa-circle-sidebar"></i>
+      <i class="fa fa-envelope-o parsa-circle-sidebar"></i>
+      <i class="fa fa-bookmark-o parsa-circle-sidebar"></i>
+      <i class="fa fa-list-alt parsa-circle-sidebar"></i>
+      <img
+        class="parsa-image-avatar parsa-circle-sidebar"
+        src="img/avatar-icon.png"
+        alt=""
+      />
+      <i class="fa fa-ellipsis-h parsa-circle-sidebar"></i>
+      <img class="parsa-circle-sidebar" src="img/stickynote-twetter.PNG" alt="">
+    </div>
+    <!-- end parsa -->
+
+    <!-- vu  -->
+    <div class="vu-cuong">
+      <div id="vu">
+        <div class="homePage">
+          <h2 id="homeText">Home</h2>
+          <img src="img/starIcon.PNG" id="imgHome" />
+        </div>
+        <!-- <hr /> -->
+        <div id="input">
+          <img
+            src="img/avatar-icon.png"
+            style="height: 45px; padding-left: 15px; padding-right: 15px;"
+          />
+          <div id="inputText">
+            <textarea
+              type="text"
+              id="text"
+              style="height: 80px;"
+              placeholder="What's happening?"
+            ></textarea><span id="exceedWord"></span>
+            <div id="typeOfInput" style="padding-top: 10px; padding-bottom: 10px;">
+              <img src="img/img-icon.PNG" />
+              <img src="img/gif-icon.PNG" />
+              <img src="img/line-icon.PNG" />
+              <img src="img/smile-icon.PNG" />
+
+              <button
+                onclick="tweetPost()"
+                id="btn-tweeter"
+                type="button"
+                class="btn btn-primary active"
+                style="border-top-left-radius: 999px;border-top-right-radius: 999px;border-bottom-left-radius: 999px;border-bottom-right-radius: 999px;"
+              >
+                Tweet
+              </button>
+              <span id="countText"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="background-color:	#E0E0E0; margin: 0;" />
+      <!-- end vu -->
+
+      <!-- cuong -->
+      <!-- cuong -->
+      <div id="cuong-section">
+        <!-- The image in the card will be fixed with our picture -->
+        <div
+          id="result"
+          class="card mb-3 cuong-smallcard"
+          style="max-width: 640px;"
+        >
+          <div class="row no-gutters cuong-row">
+            <div class="col-md-4 cuong-img-div">
+              <!-- <img src="https://www.asiatripdeals.com/wp-content/uploads/2019/03/Anonymous-Avatar.png" class="card-img cuong-card-img" alt="..." /> -->
+            </div>
+            <div class="col-md-8" id="show-message">
+              <!-- <div class="card-body cuong-card-body">
+                <h5 class="card-title">NAME</h5>
+                <p class="card-text cuong-comment">COMMENT SECTION</p>
+                <hr>
+                <p class="card-text">Posted by <b>Anonymous</b> a few seconds ago</p>
+                <button id="cuong-like">Like</button>
+                <button id="cuong-retweet">Retweet</button>
+                <button id="cuong-delete">Delete</button>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end cuong -->
+
+    <!-- duc -->
+    <div class="duc-sidebar-right">
+      <div class="duc-input">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <span class="ml-2">
+          <input type="text" placeholder="Search Twitter"
+        /></span>
+      </div>
+      <div class="duc-yourTrend mt-3">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header duc-font-awesome">
+            <b>Trends for you</b><span class="duc-circle-cog"><i class="fa fa-cog"></i></span>
+          </div>
+          <ul class="list-group list-group-flush ">
+            <li class="list-group-item duc-trend-hover">#Vietnam</li>
+            <li class="list-group-item duc-trend-hover">Hong Kong</li>
+            <li class="list-group-item duc-trend-hover">China</li>
+            <li class="list-group-item duc-trend-hover">Ha Noi</li>
+            <li class="list-group-item duc-trend-hover">Malaysia</li>
+            <li class="list-group-item duc-trend-hover"><a href="#">Show more</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="duc-yourTrend mt-3">
+          <div class="card" style="width: 18rem;">
+            <div class="card-header duc-font-awesome">
+              <b>Who to follow</b>
+            </div>
+            <ul class="list-group list-group-flush ">
+              <!-- follow first -->
+              <li class="list-group-item duc-trend-hover duc-follow">
+                <div class="duc-follow-info">
+                  <img src="img/avatar-icon.png" alt="">
+                  <div class="duc-follow-info-info"><p>Justin Sun<br>@justinsuntron</p></div>
+                </div>
+                <div class="duc-btn-follow">Follow</div>
+              </li>
+              <!-- end first -->
+              <!-- follow first -->
+              <li class="list-group-item duc-trend-hover duc-follow">
+                <div class="duc-follow-info">
+                  <img src="img/avatar-icon.png" alt="">
+                  <div class="duc-follow-info-info"><p>Patrarchs<br>@BnCung1</p></div>
+                </div>
+                <div class="duc-btn-follow">Follow</div>
+              </li>
+              <!-- end first -->
+              <!-- follow first -->
+              <li class="list-group-item duc-trend-hover duc-follow">
+                <div class="duc-follow-info">
+                  <img src="img/avatar-icon.png" alt="">
+                  <div class="duc-follow-info-info"><p>Amy Nguyen<br>@BeChangNe97</p></div>
+                </div>
+                <div class="duc-btn-follow">Follow</div>
+              </li>
+              <li class="list-group-item duc-trend-hover"><a href="#">Show more</a></li>
+
+           
+        
+            </ul>
+          </div>
+        </div>
+        <div class="duc-coppyright">
+        <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Ads info</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">More</a></li>
+            <li><a href="#">&#169; 2019 Twitter, Inc.</a></li>
+        </ul>
+
+    </div>
+    </div>
+    <!-- end duc -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="scirpts/scripts.js"></script>
+    
+  </body>
+</html>

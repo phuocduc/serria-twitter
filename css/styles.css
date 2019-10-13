@@ -1,0 +1,414 @@
+/* body {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 67px;
+  padding-right: 67px;
+}  */
+
+/* START LIVE */
+body {
+	margin: 0;
+	width: 100%;
+	height: 200vh;
+	font-family: "Exo", sans-serif;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 67px;
+  margin-top:4px;
+}
+
+ @keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}  
+
+.container {
+	width: 100%;
+	position: absolute;
+	top: 35%;
+  text-align: center;
+  /* z-index: -1; */
+} 
+.container h2 {
+  margin-top: 6%;
+  color: white;
+  margin-left: 15%;
+  position: relative;
+  font: bold 240%/120% "Lucida Grande";
+  opacity: 0.3;
+  line-height: 8px;
+}
+
+/* END LIVE BACKGROUND */
+
+.vu-cuong {
+  flex: 3;
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+  margin-left: 2%;
+  margin-right: 2%;
+  display: inline-block;
+  min-width: 150px;
+  max-width: 100%;
+  /* padding-right: 18.5%;
+  padding-left: 26.7%; */
+}
+
+/* .duc {
+  flex: 1;
+} */
+.sidebar {
+  /* flex: 1; */
+  position: fixed;
+  height: 100%;
+}
+
+/* parsa */
+
+.parsa-sidebar-left{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index:2;
+
+}
+
+.parsa-circle-sidebar{
+  width:60px;
+  height: 60px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26pt;
+  border-radius: 50px;
+  margin-bottom: 2px;
+
+}
+
+.parsa-circle-sidebar:hover{
+  background-color: #8ED0F9;
+  cursor: pointer;
+}
+
+.fa-twitter{
+  color:#1DA1F2
+}
+
+.fa-home{
+  color:#1DA1F2
+}
+
+
+
+/* end parsa */
+
+
+/* vu */
+#vu {
+  background-color: white;
+}
+.homePage {
+  height: 53px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15p;
+  padding-right: 15px;
+  background-color: lightcyan;
+}
+#homeText {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", sans-serif;
+  line-height: 1.3;
+  font-size: 19px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex: 7;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+}
+#input {
+  display: flex;
+}
+
+#inputText {
+  width: 90%;
+}
+#text {
+  width: 90%;
+}
+#btnInput {
+  margin-left: 10px;
+  opacity: 0.5;
+  background-color: rgb(29, 161, 242);
+  transition-property: background-color, box-shadow;
+  transition-duration: 0.2s;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-bottom-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  border-right-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0);
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
+}
+#tweetbtn {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", sans-serif;
+}
+#typeOfInput button {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#typeOfInput button::after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#typeOfInput button:active::after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+
+/* end vu  */
+/* .vu-cuong hr {
+  margin-bottom: 0px;
+} */
+/* cuong  */
+#cuong-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+  background-color: white;
+}
+
+.cuong-smallcard {
+  border-radius: 0px;
+  margin-bottom: 0rem !important;
+}
+.cuong-card-img {
+  padding-top: 0.8rem;
+  padding-left: 0.8rem;
+  border-radius: 50%;
+  min-width: 50%;
+  height: auto;
+}
+.cuong-card-body h5 {
+  font-size: 1rem;
+  font-weight: 800;
+}
+.card-text {
+  font-size: 12px;
+}
+.cuong-comment {
+  font-size: 15px;
+}
+.cuong-row {
+  display: flex;
+}
+/* .cuong-smallcard {
+    border: solid 	#696969;
+} */
+.cuong-card-body button {
+  /* background-color: #4CAF50; Green */
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  opacity: 0.9;
+}
+.cuong-card-body button:hover {
+  opacity: 1.5;
+}
+.like-style {
+  background-color: #008cba;
+}
+.retweet-style {
+  background-color: #4caf50;
+}
+#cuong-delete {
+  background-color: #f44336;
+}
+
+/* duc  */
+.duc-sidebar-right {
+  flex:2;
+  display: flex;
+  flex-direction: column;
+  /* position: absolute; */
+  right: 0;
+}
+
+.duc-input {
+  max-width: 18rem;
+  width: 100%;
+  border-radius: 22px;
+  background-color: #e6ecf0;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.duc-input:hover{
+  background-color: white;
+  border:1px solid #1DA1F2
+}
+
+.duc-input input {
+  position: relative;
+  width: 100%;
+  width: 242px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.duc-input div .fa-search {
+  position: absolute;
+  left: 0;
+}
+
+.duc-yourTrend{
+  border-radius: 25px;
+}
+.duc-yourTrend .card{
+  border-radius: 25px;
+}
+
+.duc-trend-hover{
+  background-color: rgba(0,0,0,.03);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+.duc-trend-hover:hover{
+  cursor: pointer;
+  background-color: #F5F8FA;
+
+}
+
+.duc-font-awesome{
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  font-size: 15pt;
+}
+
+.duc-circle-cog{
+  width: 38px;
+  border-radius: 20px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.duc-circle-cog:hover{
+  background-color: #DFEFFA;
+}
+
+.duc-circle-cog i{
+  color: #1DA1F2;
+}
+
+.duc-follow{
+  display: flex;
+  justify-content: space-between;
+}
+
+.duc-follow-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.duc-follow-info img{
+  width: 50px;
+  height: 50px;
+}
+
+.duc-btn-follow{
+  border: 1px solid #1DA1F2;
+  border-radius: 18px;
+  height: 34px;
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  color: #1DA1F2;
+}
+
+.duc-btn-follow:hover{
+  background-color: #D8E9F5;
+}
+
+.duc-coppyright ul{
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  margin:0;
+}
+
+  .duc-coppyright ul li{
+  margin-right:6px;
+} 
+
+.duc-coppyright ul li a{
+  color:#A1ACB5;
+  font-size: 10pt;
+  text-decoration: none;
+}   
+
+/* end duc */
